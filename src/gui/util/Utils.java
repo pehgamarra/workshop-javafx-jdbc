@@ -10,5 +10,14 @@ public class Utils {
 		return (Stage)((Node)event.getSource()).getScene().getWindow();
 		//se clica no botao, pega o stage do botao.
 	}
+	
+	public static Integer tryParseToInt(String str) {
+		try {
+			return Integer.parseInt(str);
+		}
+		catch (NumberFormatException e) {
+			return null;
+		}
+	}
 
 }
