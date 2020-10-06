@@ -67,7 +67,7 @@ public class MainViewController implements Initializable {
 			mainVBox.getChildren().clear();
 			mainVBox.getChildren().add(mainMenu);
 			mainVBox.getChildren().addAll(newVBox.getChildren());
-			
+			//O CONTROLE SERVE PARA USAR APENAS UM LOAD VIEW USANDO UM CONTROLLER!
 			T controller = loader.getController();
 			initializinAction.accept(controller);
 
